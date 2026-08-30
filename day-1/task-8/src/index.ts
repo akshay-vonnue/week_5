@@ -47,10 +47,12 @@
 
 // ######################### noUncheckedIndexedAccess on array
 
-function getFirstIndex(arr: number[]) {
-    const first = arr[0]
-    return first
-}
+// function getFirstIndex(arr: number[]) {
+//     const first = arr[0]
+//     return first
+// }
 
-let firstLetter = getFirstIndex([])
-console.log(firstLetter + 1)
+// let firstLetter = getFirstIndex([])
+// // console.log(firstLetter + 1)
+
+// accessing values outside bounds will yield only undefined at runtime
