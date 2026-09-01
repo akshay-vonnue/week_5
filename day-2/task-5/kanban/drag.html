@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./drag.css" />
+    <script defer type="module" src="./drag.js"></script>
+  </head>
+  <body>
+    <div class="todo-container">
+
+      <div class="todo column">
+        <div class="action">
+          <form class="todo-form">
+            <input type="text" class="todo-input" name="todo" tabindex="-1"/>
+            <button class="todo-add" tabindex="-1">add</button>
+          </form>
+          <button class="todo-delete" tabindex="-1">delete</button>
+        </div>
+        <div class="todo-render" id="todo">
+          
+        </div>
+      </div>
+
+
+      <div class="in-progress column" id="in-progress">
+        <div class="action">
+          <form class="progress-form">
+            <input type="text" class="progress-input" name="progress" tabindex="-1"/>
+            <button class="progress-add" tabindex="-1">add</button>
+          </form>
+          <button class="progress-delete" tabindex="-1">delete</button>
+        </div>
+        <div class="progress-render" id="progress"></div>
+      </div>
+
+
+      <div class="done column" id="done">
+        <div class="action">
+          <form class="done-form">
+            <input type="text" class="done-input" name="done"/>
+            <button class="done-add">add</button>
+          </form>
+          <button class="done-delete">delete</button>
+        </div>
+        <div class="done-render"></div>
+      </div>
+    </div>
+  </body>
+</html>
