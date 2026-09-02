@@ -18,4 +18,4 @@ function typeOf(para) {
 }
 console.log(typeOf("akshay"));
 console.log(typeof (12));
-// export {};
+export {};
