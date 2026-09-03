@@ -1,0 +1,15 @@
+{
+  "scripts": {
+    "test": "vitest run --coverage",
+    "type-check": "tsc --noEmit"
+  },
+  "dependencies": {
+    "vitest": "^4.1.11"
+  },
+  "devDependencies": {
+    "@types/jsdom": "^30.0.0",
+    "@vitest/coverage-v8": "^4.1.11",
+    "jsdom": "^30.0.1",
+    "tsc-alias": "^1.9.4"
+  }
+}

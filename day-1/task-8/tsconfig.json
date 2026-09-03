@@ -1,0 +1,22 @@
+{
+    "compilerOptions": {
+        "strict": true,
+        "module": "es2022",
+        "target": "es2022",
+        "outDir": "dist",
+        "rootDir": "src",
+
+        // "noImplicitAny": false  in cases where type annotations are not present,ts will fallback to a type of "any"
+        //                         turning on noImplicitAny ts raises an error whenever it would have inferred "any".
+
+        // "strictNullChecks": true this will raise an error that you have not made a guarantee that the varible exists
+        //                          before actually using it.
+
+        // "strictFunctionTypes": true when enabled this enables function parameters checked more correctly.`
+
+        // "noUncheckedIndexedAccess": true  Turning on noUncheckedIndexedAccess will add undefined to any un-declared 
+        //                                   field in the type.
+
+        "noUncheckedIndexedAccess": true
+    }
+}
