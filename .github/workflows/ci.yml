@@ -1,0 +1,32 @@
+name: CI
+
+on: 
+  push:
+    branches: ["day-4"]
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+
+    strategy:
+      matrix: 
+        node-version: [22.x]
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+      
+      - name: use Node.js ${{matrix.node-version}}
+        uses: actions/setup-node@v4
+        with:
+          node-version: ${{matrix.node-version}}
+          cache: 'npm'
+          cache-dependancy-path: 'day-4/package-lock.json'
+
+      - name: Install dependancies
+        working-directory: day-4
+        run: npm install
+
+      - name: Run tests
+        working-directory: day-4
+        run: npm run test
