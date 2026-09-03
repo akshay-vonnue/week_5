@@ -70,6 +70,7 @@ let object = {
 }
 
 console.log(getProperty(object, "place"))
+// console.log(getProperty(object,'ethinicity'))
 
 // Build a generic Queue<T> class with enqueue, dequeue, peek, isEmpty
 
