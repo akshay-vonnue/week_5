@@ -21,7 +21,7 @@ jobs:
         with:
           node-version: ${{matrix.node-version}}
           cache: 'npm'
-          cache-dependancy-path: 'day-4/package-lock.json'
+          cache-dependency-path: 'day-4/package-lock.json'
 
       - name: Install dependancies
         working-directory: day-4
