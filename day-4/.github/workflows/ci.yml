@@ -1,8 +1,0 @@
-name: Test runner
-on: [push]
-jobs:
-  test:
-    runs-on: self-hosted
-    steps:
-      name: running test
-      run : npm run test
