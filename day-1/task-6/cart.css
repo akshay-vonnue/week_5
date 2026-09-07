@@ -1,0 +1,25 @@
+.product-list{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    background-color: cornflowerblue;
+    border-radius: 1rem;
+    padding:2rem;
+}
+
+li {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    justify-content: center;
+    border-radius: 1rem;
+
+}
+
+.cart-list{
+    border: 1px dotted black;
+    background-color: rgba(30, 105, 235, 0.919);
+    color: white;
+    padding: 10px;
+    border-radius: 1rem;
+}
